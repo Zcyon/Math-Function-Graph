@@ -1,0 +1,32 @@
+/*
+	Elements by CLASS
+*/
+.page-header {
+	text-align: center;
+}
+
+.well {
+	text-align: center;
+}
+
+.form-wrapper {
+	padding: 1%;
+	display: inline-table;
+}
+
+.legal {
+	text-align: center;
+}
+
+
+/*
+	Elements by ID
+*/
+#canvasWrapper {
+	background-color: #F7F7F7;
+	display: none;
+}
+
+#hideButton {
+	display: none;
+}

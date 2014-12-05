@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title></title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		
+		<script type="text/javascript" src="lib/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="lib/HiCanvas.js"></script>
+	</head>
+
+	<body onload="loadCanvas();">
+
+		<div id="appBody" class="container">
+			
+			<div class="page-header">
+				<h2>Graficador de Funciones Matemáticas</h2>
+			</div>
+			
+			<div class="alert alert-warning">
+				<p>Currently in development. It is not the final interface, but a prototype.</p>
+			</div>
+			
+			<div class="well">
+				
+				<div class="form-wrapper">
+					<label for="funcInput">Function</label>
+					<br>
+					<input id="funcInput" type="text">
+
+					<br>
+					<br>
+					<label for="stepInput">Step</label>
+					<br>
+					<input id="stepInput" type="number" step="0.1">
+					<br>
+					<br>
+					<button id="graphButton" class="btn btn-primary btn-large" onclick="showCanvas();showHideButton();">Graph</button>
+				</div>
+
+				<div class="form-wrapper">
+					<label for="starInput">Start</label>
+					<br>
+					<input id="starInput" type="number" step="0.1">
+					
+					<br>
+					<br>
+					<label for="endInput">End</label>
+					<br>
+					<input id="endInput" type="number" step="0.1">
+					<br>
+					<br>
+					<button id="hideButton" class="btn btn-primary btn-large" onclick="hideCanvas();hideHideButton();">Hide Canvas</button>
+				</div>
+				
+			</div>
+			
+			<div id="canvasWrapper">
+				<!-- The HiCanvas object will be loaded here -->
+			</div>
+			
+			<div class="page-header"></div>
+			
+			<div class="legal">
+				<p>Created by Lascario Pacheco for Nerio Villalobos | 2014</p>
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="src/responses.js"></script>
+		<script type="text/javascript" src="src/application.js"></script>
+		
+	</body>
+</html>
