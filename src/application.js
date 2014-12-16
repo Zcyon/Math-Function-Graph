@@ -1,3 +1,16 @@
+var application = {
+	functionString: '',
+	funcStart: 0,
+	funcEnd: 0,
+	funcStep: 0.1,
+	grapScale: 1,
+	axis: {
+		x: 0,
+		y: 0,
+		axisStep: 0.1
+	}
+};
+
 var loadCanvas = function () {
 	"use strict";
 	
@@ -28,6 +41,13 @@ var parseFunction = function (functionString) {
 	"use strict";
 	/*
 		Function parsing logic goes here...
+	*/
+};
+
+var drawAxis = function () {
+	"use strict";
+	/*
+		Axis drawing logic goes here...
 	*/
 };
 
